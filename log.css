@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 150px 1fr;
+    max-width: 600px;
+    margin: 40px auto;
+    align-items: center;
+    font-size: 24px;
+    font-style: oblique;
+    color: #00fff7; /* neon teal */
+    text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+}
+
+input, select, textarea {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    background: black;
+    border: 2px solid #00fff7;
+    color: #00fff7;
+    outline: none;
+    box-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7 inset;
+}
+
+option {
+    background-color: black;
+    color: #00fff7;
+}
+
+textarea {
+    max-width: 500px;
+    height: 200px;
+}
+
+button {
+    grid-column: span 2;
+    justify-self: center;
+    padding: 10px 30px;
+    background: black;
+    border: 2px solid #00fff7;
+    color: #00fff7;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7, 0 0 40px #00fff7;
+}
+
+h1 {
+    text-align: center;
+    color: #00fff7;
+    text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+}
