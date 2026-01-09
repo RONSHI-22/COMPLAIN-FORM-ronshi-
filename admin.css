@@ -1,0 +1,79 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background: #000;
+    color: #7ffcff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    padding: 40px;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+/* COMPLAINT CONTAINER */
+#complaints {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    background: rgba(0, 255, 247, 0.05);
+    border: 1px solid #00fff7;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 247, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 255, 247, 0.8);
+}
+
+/* TEXT INSIDE CARD */
+.card strong {
+    color: #00fff7;
+}
+
+.card small {
+    display: block;
+    margin-top: 10px;
+    color: #6fffe9;
+    font-size: 12px;
+}
+
+/* BUTTON */
+button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    background: transparent;
+    color: #00fff7;
+    border: 2px solid #00fff7;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #00fff7;
+    box-shadow: 0 0 15px rgba(0, 255, 247, 0.5);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00fff7;
+    color: #000;
+    box-shadow: 0 0 30px #00fff7;
+}

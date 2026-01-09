@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPLAIN</title>\
+    <title>COMPLAIN</title>
     <link rel="stylesheet" href="log.css">
 </head>
 <body>
-    <h1>Complain Kay Ronshi</h1>
-    <form action="">
-        <label for="UserName">UsertName</label>
-        <input type="text" name="UserName" id="username" placeholder="Ronshi" > 
-        <label for="Gender">Gender</label>
-        <select name="Gender" id="">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="others">others</option>
-        </select>
-        <label for="ComplainBox">Complains</label>
-        <textarea name="ComplainBox" id="ComplainBox" required></textarea>
-        <button>submit</button>
-    </form>
+
+<h1>Complain Kay Ronshi</h1>
+<script src="function.js"></script>
+
+<form id="complainForm">
+    <label>User Name</label>
+    <input type="text" id="username" placeholder="Ronshi" required>
+
+    <label>Gender</label>
+    <select id="gender" required>
+        <option value="">Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+    </select>
+
+    <label>Complaint</label>
+    <textarea id="complainBox" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+
 </body>
 </html>
