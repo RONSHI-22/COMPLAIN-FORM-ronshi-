@@ -9,7 +9,8 @@ function loadComplaints() {
         return;
     }
 
-    complaints.forEach(c => {
+    // 🔥 Newest complaints appear on TOP
+    complaints.slice().reverse().forEach(c => {
         const card = document.createElement("div");
         card.className = "card";
 
@@ -29,5 +30,5 @@ function clearComplaints() {
     loadComplaints();
 }
 
+// Load complaints when page opens
 document.addEventListener("DOMContentLoaded", loadComplaints);
-
